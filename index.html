@@ -19,7 +19,72 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3611060072430460"
      crossorigin="anonymous"></script>
 <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFEEO8arifLK4J5_PwHMFmeSD9OpCyhBwe2Q&usqp=CAU" type="image/x-icon">
+<script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+  </script>
     <title> Pallavi Jagtap </title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+<style>
+    .calendar{
+        width: 70%;
+        margin: auto;
+        color: #77BEF8;
+    }
+    .statics{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        height: 230px;
+        justify-content: space-evenly;
+    }
+    .sub-statics{
+        height: 70%;
+        width: 15%;
+        border: 13px solid #77BEF8;
+        border-radius: 50%;
+    }
+    .data-static{
+        color: white;
+        font-size: 40px;
+        margin-left: 15px;
+        margin-top: 35px;
+    }
+    .data-static1{
+        color: white;
+        font-size: 40px;
+        margin-left: 35px;
+        margin-top: 35px;
+    }
+    .data-static2{
+        color: white;
+        font-size: 40px;
+        margin-left: 40px;
+        margin-top: 35px;
+    }
+    .statics-1{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        height: 100px;
+        justify-content: space-evenly; 
+        margin-top: -50px;
+    }
+    .sub-statics-type{
+       margin-left: 20px;
+    }
+    /* .data-static1-type{
+         margin-left: 50px; 
+    }
+    .data-static2-type{
+        padding-left: 100px;
+    }
+    .data-static3-type{
+        padding-left: 250px;
+    } */
+</style>
 </head>
 
 <body>
@@ -57,7 +122,7 @@
                     </li>
                 </ul>
             </div>
-
+            
             <!-- Theme Change Button -->
             <i class='bx bx-moon change-theme' id="theme-button"></i>
         </nav>
@@ -367,6 +432,57 @@
                 </div>
             </div>
         </section>
+        <!-- STATICS -->
+        <section>
+            <span class="section__subtitle">My Statistics</span>
+            <h2 class="section__title">Statistics section</h2>
+            <div class="work__filters">
+                <span class="work__item" data-filter=".github-calendar">Skills Data</span>
+            </div>
+            <div>
+                <div class="statics">
+                  <div class="sub-statics">
+                    <h1 class="data-static">250+</h1>
+                  </div>
+                  <div class="sub-statics">
+                    <h1 class="data-static1">68+</h1>
+                  </div>
+                  <div class="sub-statics">
+                    <h1 class="data-static2">5+</h1>
+                  </div>
+                  <div class="sub-statics">
+                    <h1 class="data-static1">20+</h1>
+                  </div>
+                </div>
+                <div class="statics-1">
+                    <div class="sub-statics-type">
+                        <h1 class="data-static-type">  &#160 Hours</h1>
+                        <h4> &#160 of Full stack
+                        </br> &#160 &#160 Coding</h4>
+                      </div>
+                      <div class="sub-statics-type">
+                        <h1 class="data-static1-type">    &#160 Git</h1>
+                        <h4 class="data-static1-type">   &#160 Commits</h4>
+                      </div>
+                      <div class="sub-statics-type">
+                        <h1 class="data-static2-type">   &#160 Projects</h1>
+                        <h4 class="data-static2-type">   &#160 &#160 &#160 &#160 &#160 Done</h4>
+                      </div>
+                      <div class="sub-statics-type">
+                        <h1 class="data-static3-type"> &#160  &#160 Hours</h1>
+                        <h4 class="data-static3-type"> &#160 &#160  &#160 of Soft Skills </br>  &#160 &#160 &#160 &#160 Sessions</h4>
+                      </div>
+                </div>
+            </div>
+            <div class="work__filters">
+                <span class="work__item" data-filter=".github-calendar">GitHub calendar</span>
+            </div>
+
+            <div  class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+        </section>
           <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
             <span class="section__subtitle">Get in Touch</span>
@@ -485,3 +601,17 @@
 </body>
 
 </html>
+<script>
+    GitHubCalendar(".calendar","pallu2108");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "pallu2108", { responsive: true });
+
+    // Use a proxy
+
+    GitHubCalendar(".calendar", "pallu2108", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${username}`)
+       }
+    }).then(r => r.text())
+</script>
