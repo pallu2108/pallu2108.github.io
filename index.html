@@ -606,16 +606,11 @@
 
 </html>
 <script>
-    GitHubCalendar(".calendar","pallu2108");
+    // GitHubCalendar(".calendar","pallu2108");
 
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "pallu2108", { responsive: true });
 
     // Use a proxy
 
-    GitHubCalendar(".calendar", "pallu2108", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`)
-       }
-    }).then(r => r.text())
 </script>
