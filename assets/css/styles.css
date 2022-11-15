@@ -1532,6 +1532,7 @@ body.light-theme {
 
 .calendar {
   width: 60%;
+  height: fit-content;
   margin: auto;
   padding: 10px;
   color: #77BEF8;
@@ -1658,8 +1659,9 @@ body.light-theme {
   .statics>div>img {
     margin-bottom: 10px;
   }
+
   .calendar {
-    width: 75%;
+    width: 95%;
     margin: auto;
     padding: 10px;
     color: #77BEF8;
@@ -1677,9 +1679,11 @@ body.light-theme {
   .statics>div>img {
     margin-bottom: 10px;
   }
+
   .calendar {
-    width: 95%;
+    width: 90%;
     margin: auto;
+    height: fit-content;
     padding: 10px;
     color: #77BEF8;
   }
@@ -1696,8 +1700,10 @@ body.light-theme {
   .statics>div>img {
     margin-bottom: 10px;
   }
+
   .calendar {
     width: 90%;
+    height: fit-content;
     margin: auto;
     padding: 10px;
     color: #77BEF8;
@@ -1715,10 +1721,12 @@ body.light-theme {
   .statics>div>img {
     margin-bottom: 10px;
   }
+
   .calendar {
     width: 90%;
     margin: auto;
     padding: 10px;
+    height: fit-content;
     color: #77BEF8;
   }
 }
