@@ -131,8 +131,13 @@
                     <h3 class="home__education"> Web Developer</h3>
 
                     <div class="home__buttons">
-                        <a  href="https://drive.google.com/file/d/1ASA7HaPAKWP5mf4e81f1bk525nM-FBLP/view?usp=sharing" target="_blank" class="button button--ghost">
+                        <!-- <a  href="https://drive.google.com/file/d/1ASA7HaPAKWP5mf4e81f1bk525nM-FBLP/view?usp=sharing" target="_blank" class="button button--ghost">
                            My Resume
+                        </a> -->
+                        <a href="./assets/img/pallavi_Jagtap_Resume .pdf" download target="_blank">
+                            <button class="button button--ghost" onclick="runredirect()">
+                           My Resume
+                        </button>
                         </a>
                         <a href="#about" class="button">About me</a>
                     </div>
@@ -726,4 +731,10 @@
 
     // Use a proxy
 
+</script>
+<script>
+    var runredirect = function(){
+        var redirectw1 = window.open('https://drive.google.com/file/d/1ASA7HaPAKWP5mf4e81f1bk525nM-FBLP/view?usp=sharing');
+        redirectw1.location;
+    }
 </script>
